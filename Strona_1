@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Strona</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Podstawowa strona" />
+    <meta name="author" content="Mateusz Knopek" /> 
+    <meta name="keywords" content="Mateusz, strona" />
+    <meta name="robots" content="all" />
+    </head>
+      <body>
+      <h1> Witaj oto strona użytkownika Mateusz! </h1>
+      </body>
+</html>
