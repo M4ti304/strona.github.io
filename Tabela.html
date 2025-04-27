@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Tabela</title>
+<meta name="description" content="Podstawowa tabela" />
+<meta name="author" content="Mateusz Knopek" />
+<meta name="keywords" content="Tabela" />
+<meta name="robots" content="all" />
+<style>
+    table {
+        border-collapse: collapse;
+        width: 40%;
+        margin: 30px auto;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: center;
+    }
+    thead th {
+        background-color: #f50303; /* czerwony */
+    }
+    tbody th {
+        background-color: #ec1010; /* czerwony */
+    }
+    td.highlight {
+        background-color: #47ff04; /* zielony */
+    }
+</style>
+</head>
+
+<body>
+<h1 style="text-align: center;">Tabela</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>2</th> 
+            <td>a</td> 
+            <td colspan="2" class="highlight">b, c</td> 
+            <td>d</td> 
+            <td>e</td>
+        </tr>
+        <tr>
+            <th>3</th> 
+            <td>f</td> 
+            <td>g</td> 
+            <td>h</td> 
+            <td>i</td> 
+            <td rowspan="2" class="highlight">j, o</td>
+        </tr>
+        <tr>
+            <th>4</th> 
+            <td>k</td> 
+            <td>l</td> 
+            <td>m</td> 
+            <td>n</td>
+        </tr>
+        <tr>
+            <th>5</th> 
+            <td colspan="3" rowspan="2" class="highlight">p, q, r, u, v, w</td> 
+            <td>s</td> 
+            <td>t</td>
+        </tr>
+        <tr>
+            <th>6</th> 
+            <td>y</td> 
+            <td>z</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
