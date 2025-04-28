@@ -10,7 +10,7 @@
 <style>
     table {
         border-collapse: collapse;
-        width: 40%;
+        width: 25%;
         margin: 30px auto;
     }
     th, td {
@@ -19,20 +19,67 @@
         text-align: center;
     }
     thead th {
-        background-color: #f50303; /* czerwony */
+        background-color: #00d7f3; /* czerwony */
     }
     tbody th {
-        background-color: #ec1010; /* czerwony */
+        background-color: #00d7f3; /* czerwony */
     }
     td.highlight {
-        background-color: #47ff04; /* zielony */
+        background-color: #39ff08; /* zielony */
     }
 </style>
 </head>
 
 <body>
-<h1 style="text-align: center;">Tabela</h1>
-
+<h1 style="text-align: center;">Tabele</h1>
+<table>
+    <thead>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>2</th> 
+            <td>a</td> 
+            <td>b</td> 
+            <td>c</td> 
+            <td>d</td> 
+            <td>e</td>
+        </tr>
+        <tr>
+            <th>3</th> 
+            <td>f</td> 
+            <td>g</td> 
+            <td>h</td> 
+            <td>i</td> 
+            <td>j</td>
+        </tr>
+        <tr>
+            <th>4</th> 
+            <td>k</td> 
+            <td>l</td> 
+            <td>m</td> 
+            <td>n</td>
+            <td>o</td>
+        </tr>
+        <tr>
+            <th>5</th> 
+            <td>p</td> 
+            <td>q</td>
+            <td>r</td>
+            <td>s</td>
+            <td>t</td>
+        </tr>
+        <tr>
+            <th>6</th> 
+            <td>u</td> 
+            <td>v</td>
+            <td>w</td>
+            <td>y</td>
+            <td>z</td>
+        </tr>
+    </tbody>
 <table>
     <thead>
         <tr>
@@ -75,5 +122,53 @@
         </tr>
     </tbody>
 </table>
+<table>
+    <thead>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>2</th> 
+            <td>a</td> 
+            <td>b</td> 
+            <td>c</td> 
+            <td>d</td> 
+            <td>e</td>
+        </tr>
+        <tr>
+            <th>3</th> 
+            <td>f</td> 
+            <td>g</td> 
+            <td>h</td> 
+            <td>i</td> 
+            <td>j</td>
+        </tr>
+        <tr>
+            <th>4</th> 
+            <td colspan="3" class="highlight">k, l, m</td>
+            <td>n</td>
+            <td>o</td>
+        </tr>
+        <tr>
+            <th>5</th> 
+            <td>p</td> 
+            <td>q</td>
+            <td>r</td>
+            <td>s</td>
+            <td>t</td>
+        </tr>
+        <tr>
+            <th>6</th> 
+            <td>u</td> 
+            <td>v</td>
+            <td>w</td>
+            <td>y</td>
+            <td>z</td>
+        </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
