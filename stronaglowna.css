@@ -1,4 +1,4 @@
-
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 50px;
 }
-
 
 h1 {
     font-size: 3rem;
@@ -24,48 +23,51 @@ h1 {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
-
 h2 {
     font-size: 2rem;
-    margin: 15px 0;
+    margin: 20px 0 15px 0;
     padding: 10px 20px;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-}
-
-
-h2:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    background: #f8faff;
-}
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 20px 0;
     text-align: center;
 }
 
-li {
-    margin: 8px 0;
+/* Kontener na przyciski */
+.button {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
-a {
+/* Styl przycisków */
+.button a {
     text-decoration: none;
     color: #1a3d7c;
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 8px;
     background: #ffffff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     transition: 0.2s ease;
 }
 
-a:hover {
+.button a:hover {
     background: #f0f4ff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
     transform: translateY(-3px);
+}
+
+footer {
+    position: fixed;         
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #1a3d7c, #3f5bb5); 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+    font-family: 'Arial', sans-serif;
+    z-index: 100;
 }
