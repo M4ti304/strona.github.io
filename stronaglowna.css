@@ -71,3 +71,17 @@ footer {
     font-family: 'Arial', sans-serif;
     z-index: 100;
 }
+
+header {
+     position: fixed;         
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #1a3d7c, #3f5bb5); 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    font-family: 'Arial', sans-serif;
+    z-index: 100;
+}
