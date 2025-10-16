@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 100px; /* 🔹 ZWIĘKSZONO, by uwzględnić header */
+    padding-bottom: 70px; /* 🔹 Dodano też miejsce na footer */
 }
 
 h1 {
@@ -73,7 +73,7 @@ footer {
 }
 
 header {
-     position: fixed;         
+    position: fixed;         
     top: 0;
     left: 0;
     width: 100%;
