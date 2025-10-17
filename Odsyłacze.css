@@ -1,0 +1,32 @@
+img {
+    padding-top: 25px;
+    
+}
+
+body {
+    color: rgb(14, 32, 41);
+    background-color: rgb(218, 234, 248);
+    text-align: center;
+    font-family: serif;
+    font-size: 150%;
+}
+
+p {
+    border: solid;
+    border-color: black;
+}
+
+p:hover {
+    color:rgba(138, 132, 132, 0.747);
+
+}
+
+a {
+    font-size: 200%;
+}
+
+a:hover {
+    color:rgba(138, 132, 132, 0.747);
+
+}
+
