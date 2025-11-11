@@ -1,75 +1,74 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="pl">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Halloween Party — Zapraszamy!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Halloween — Noc Duchów</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="halloween.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="scene">
-<header>
-<div class="logo">
-<div class="pumpkin" aria-hidden="true">🎃</div>
-<div>
-<h1>Halloween Party</h1>
-<div class="sub">Najzabawniejsze przebrania wygrywają cukierki!</div>
-</div>
-</div>
-<nav>
-<a href="#galeria" class="btn">Galeria</a>
-<a href="#info" class="btn ghost">Informacje</a>
-</nav>
+<header class="hero">
+<div class="overlay"></div>
+<h1 class="title">Halloween — Noc Duchów</h1>
+<p class="subtitle">Zwyczaje, krótka historia i trochę strasznej zabawy 🎃</p>
 </header>
 
 
-<main class="hero">
-<section class="left card">
-<p class="lead">Hej! Przygotowaliśmy niezłą dawkę śmiechu, przebieranek i słodkości.</p>
-<p class="desc">Zapisz się, pokaż kostium i wygraj nagrody — a wszystko w klimacie lekkiego horroru (ale raczej śmiesznego).</p>
+<main class="container">
+<section class="history card">
+<h2>Krótka historia</h2>
+<p>Halloween wywodzi się z celtyckiego święta <strong>Samhain</strong>, obchodzonego na przełomie października i listopada. Celtowie wierzyli, że w tę noc granica między światem żywych a umarłych staje się cienka — pojawiają się duchy, a ludzie odprawiali rytuały, by zapewnić sobie ochronę i urodzaj na przyszły rok.</p>
+<p>W średniowieczu obrzędy przeniknęły się z chrześcijańskimi dniami zadusznymi, a z czasem Halloween przyjęło formę, którą dziś znamy: przebieranki, lampiony z dyni, opowieści o duchach i zabawy dla dzieci (trick-or-treat).</p>
+<p>Dziś Halloween to mieszanka tradycji, komercji i zabawy — idealna okazja, by puścić wodze wyobraźni i stworzyć trochę przyjemnego strachu.</p>
+</section>
 
 
-<div class="countdown" aria-hidden="true">
-<div class="box"><div class="num">31</div><div class="label">października</div></div>
-<div class="box"><div class="num">20:00</div><div class="label">Start imprezy</div></div>
-</div>
-
-
-<div class="actions">
-<a href="#" class="btn">Zapisz się</a>
+<section class="gallery card">
+<h2>Galeria</h2>
+<div class="images">
+<figure>
+<img src="https://images.unsplash.com/photo-1505576391880-5a8c4e8d2b55?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5c7b0a2b7f3e0b1b9e6f6f6f6f6f6f6f" alt="Dynia z wyciętym uśmiechem">
+<figcaption>Klasyczna wycięta dynia</figcaption>
+</figure>
+<figure>
+<img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9b3c1f3c3d6b3a8c7a2d2d2d2d2d2d2d" alt="Mroczny las nocą">
+<figcaption>Mroczny wieczór i mgła</figcaption>
+</figure>
+<figure>
+<img src="https://images.unsplash.com/photo-1549836938-0c4f6d3d4ae3?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a1f6a6b2b2b2b2b2b2b2b2b2b2b2b2b" alt="Straszne maski i kostiumy">
+<figcaption>Kostiumy i maski</figcaption>
+</figure>
 </div>
 </section>
 
 
-<aside class="right" id="galeria">
-<div class="card gallery">
-<h3 class="gtitle">Galeria kostiumów</h3>
-<div class="thumbs">
-<div class="thumb">🧙‍♀️</div>
-<div class="thumb">🧛</div>
-<div class="thumb">🧟</div>
-<div class="thumb">🕷️</div>
-</div>
-<p class="muted">Najzabawniejsze stroje pojawią się tutaj!</p>
-</div>
-</aside>
+<section class="tips card">
+<h2>Pomysły na dekoracje</h2>
+<ul>
+<li>Wydrążona dynia z podświetleniem LED — bezpieczniejsza niż świeca.</li>
+<li>Girlandy z czarnych papierowych nietoperzy — łatwe do zrobienia samemu.</li>
+<li>Świece w słoikach z efektem "krwawiącego" wosku (czerwony wosk na białej świecy).</li>
+<li>Projekcje cieni (latarenka + wycięte kształty) na ścianę — bardzo klimatyczne.</li>
+</ul>
+</section>
+
+
 </main>
 
 
-<section class="card info" id="info">
-<h3>Informacje</h3>
-<p>🎉 Miejsce: Klub Fantazja, ul. Dyniowa 13, Warszawa</p>
-<p>🕗 Czas: 31 października od godz. 20:00</p>
-<p>🍭 Nagrody: za najlepszy kostium i taniec zombie!</p>
-</section>
-
-
-<footer class="card small">
-<small>Strona stworzona na Halloween — baw się dobrze! 👻</small>
+<footer class="footer">
+<p>Życzymy strasznie dobrej zabawy! 👻 • © Halloween</p>
 </footer>
-</div>
+
+
+<!-- Dekoracyjne nietoperze animowane CSS -->
+<div class="bat bat-1">🦇</div>
+<div class="bat bat-2">🦇</div>
+<div class="bat bat-3">🦇</div>
+
+
 </body>
 </html>
