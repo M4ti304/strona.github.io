@@ -1,0 +1,45 @@
+:root{
+--bg:#FFF8F0;
+--card:#ffffff;
+--accent:#FF6F61;
+--muted:#6b6b6b;
+--shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+margin:0;font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+background:linear-gradient(180deg,#FFF7EE 0%,#FFF0F3 100%);
+display:flex;align-items:center;justify-content:center;padding:28px;
+}
+.scene{width:96%;max-width:1024px;background:var(--bg);border-radius:18px;padding:20px;box-shadow:var(--shadow);}
+header{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:14px}
+.logo h1{font-family:'Baloo 2', cursive;margin:0;font-size:28px;color:#3b2b2b}
+.logo .sub{font-size:12px;color:var(--muted)}
+.pumpkin{font-size:36px}
+.btn{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer;box-shadow:0 6px 16px rgba(255,111,97,0.28);text-decoration:none;display:inline-block}
+.btn.ghost{background:transparent;color:var(--accent);border:2px solid rgba(255,111,97,0.14)}
+.hero{display:flex;gap:20px;align-items:flex-start;margin-top:16px}
+.left{flex:1}
+.right{width:320px}
+.card{background:var(--card);padding:16px;border-radius:12px}
+.lead{font-size:18px;margin:0 0 6px;color:#4a3a3a}
+.desc{margin:0 0 12px;color:var(--muted)}
+.countdown{display:flex;gap:8px;margin-bottom:12px}
+.box{background:linear-gradient(180deg,#FFF9F6,#FFF0E8);padding:8px 12px;border-radius:8px;text-align:center;min-width:90px}
+.num{font-family:'Baloo 2', cursive;font-size:20px}
+.label{font-size:11px;color:var(--muted)}
+.actions{display:flex;gap:8px}
+.gallery .gtitle{margin:0 0 10px;font-size:16px}
+.thumbs{display:flex;gap:8px;flex-wrap:wrap}
+.thumb{background:linear-gradient(180deg,#fff,#fff7f3);padding:16px;border-radius:10px;font-size:28px;display:flex;align-items:center;justify-content:center;cursor:default;box-shadow:0 6px 14px rgba(0,0,0,0.04)}
+.small{margin-top:14px;text-align:center}
+.muted{color:var(--muted);font-size:13px;margin-top:10px}
+.info{margin-top:20px}
+
+
+@media (max-width:800px){
+.hero{flex-direction:column}
+.right{width:100%}
+}
