@@ -1,45 +1,92 @@
-:root{
---bg:#FFF8F0;
---card:#ffffff;
---accent:#FF6F61;
---muted:#6b6b6b;
---shadow: 0 8px 24px rgba(0,0,0,0.08);
+/* styles.css */
+padding:6rem 1rem 4rem;
+text-align:center;
+background-image: linear-gradient(180deg, rgba(0,0,0,0.2), transparent);
 }
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-margin:0;font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-background:linear-gradient(180deg,#FFF7EE 0%,#FFF0F3 100%);
-display:flex;align-items:center;justify-content:center;padding:28px;
+.hero .overlay{
+position:absolute;inset:0;pointer-events:none;background:linear-gradient(120deg, rgba(0,0,0,0.35), rgba(0,0,0,0.6));
 }
-.scene{width:96%;max-width:1024px;background:var(--bg);border-radius:18px;padding:20px;box-shadow:var(--shadow);}
-header{display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:14px}
-.logo h1{font-family:'Baloo 2', cursive;margin:0;font-size:28px;color:#3b2b2b}
-.logo .sub{font-size:12px;color:var(--muted)}
-.pumpkin{font-size:36px}
-.btn{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer;box-shadow:0 6px 16px rgba(255,111,97,0.28);text-decoration:none;display:inline-block}
-.btn.ghost{background:transparent;color:var(--accent);border:2px solid rgba(255,111,97,0.14)}
-.hero{display:flex;gap:20px;align-items:flex-start;margin-top:16px}
-.left{flex:1}
-.right{width:320px}
-.card{background:var(--card);padding:16px;border-radius:12px}
-.lead{font-size:18px;margin:0 0 6px;color:#4a3a3a}
-.desc{margin:0 0 12px;color:var(--muted)}
-.countdown{display:flex;gap:8px;margin-bottom:12px}
-.box{background:linear-gradient(180deg,#FFF9F6,#FFF0E8);padding:8px 12px;border-radius:8px;text-align:center;min-width:90px}
-.num{font-family:'Baloo 2', cursive;font-size:20px}
-.label{font-size:11px;color:var(--muted)}
-.actions{display:flex;gap:8px}
-.gallery .gtitle{margin:0 0 10px;font-size:16px}
-.thumbs{display:flex;gap:8px;flex-wrap:wrap}
-.thumb{background:linear-gradient(180deg,#fff,#fff7f3);padding:16px;border-radius:10px;font-size:28px;display:flex;align-items:center;justify-content:center;cursor:default;box-shadow:0 6px 14px rgba(0,0,0,0.04)}
-.small{margin-top:14px;text-align:center}
-.muted{color:var(--muted);font-size:13px;margin-top:10px}
-.info{margin-top:20px}
+.title{
+position:relative;
+font-family: 'Creepster', cursive;
+font-size:3.2rem;
+margin:0 0 .25rem;
+color:var(--accent);
+text-shadow: 0 4px 18px rgba(0,0,0,0.7), 0 0 24px rgba(255,122,24,0.06);
+}
+.subtitle{position:relative;margin:0;color:#ffd8b6}
 
 
-@media (max-width:800px){
-.hero{flex-direction:column}
-.right{width:100%}
+.container{
+width:min(1100px,92%);
+margin:-2.5rem auto 2rem;
+display:grid;
+grid-template-columns: 1fr;
+gap:1.25rem;
 }
+
+
+.card{
+background:var(--card);
+border-radius:12px;
+padding:1.25rem;
+box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+backdrop-filter: blur(3px);
+}
+
+
+.history h2, .gallery h2, .tips h2{color:var(--accent);margin-top:0}
+
+
+.images{
+display:flex;
+gap:0.75rem;
+flex-wrap:wrap;
+justify-content:center;
+}
+.images figure{margin:0;width:calc(33% - 0.5rem);min-width:180px}
+.images img{width:100%;height:150px;object-fit:cover;border-radius:8px;display:block;box-shadow:inset 0 -6px 18px rgba(0,0,0,0.35)}
+.images figcaption{font-size:.85rem;color:#ffdcb8;text-align:center;margin-top:.5rem}
+
+
+.tips ul{margin:0;padding-left:1.25rem}
+.tips li{margin:.5rem 0}
+
+
+.footer{
+text-align:center;padding:1.25rem;color:#9aa7b6;font-size:.95rem
+}
+
+
+/* Nietoperze animowane */
+.bat{
+position:fixed;top:10vh;font-size:2.4rem;z-index:40;opacity:0.9;transform:translateY(-10px);
+}
+.bat-1{left:5%;animation:fly1 9s linear infinite}
+.bat-2{left:70%;animation:fly2 12s linear infinite}
+.bat-3{left:40%;animation:fly3 7s linear infinite}
+
+
+@keyframes fly1{0%{transform:translateY(-10px) translateX(0) rotate(0deg)}50%{transform:translateY(10vh) translateX(20vw) rotate(12deg)}100%{transform:translateY(-10px) translateX(0) rotate(0deg)}}
+@keyframes fly2{0%{transform:translateY(0) translateX(0) rotate(6deg)}50%{transform:translateY(20vh) translateX(-25vw) rotate(-8deg)}100%{transform:translateY(0) translateX(0) rotate(6deg)}}
+@keyframes fly3{0%{transform:translateY(0) translateX(0) rotate(-6deg)}50%{transform:translateY(15vh) translateX(30vw) rotate(10deg)}100%{transform:translateY(0) translateX(0) rotate(-6deg)}}
+
+
+/* Responsywność */
+@media (min-width:900px){
+.container{grid-template-columns: 1fr 380px}
+.history{grid-column:1/2}
+.gallery{grid-column:2/3}
+.gallery .images figure{width:100%}
+}
+
+
+@media (max-width:600px){
+.title{font-size:2.2rem}
+.images img{height:120px}
+}
+
+
+/* Delikatne efekty hover */
+.card:hover{transform:translateY(-4px);transition:transform .35s ease}
+.images img:hover{filter:brightness(1.06) saturate(1.1);transform:scale(1.02);transition:all .28s ease}
