@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Aptos, sans-serif;
+}
+
+.kwadraty {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border: 1px solid #444;
+    font-size: 18px;
+}
+
+.silver { 
+    background:#C0C0C0; 
+    color: black; 
+}
+
+.gray { 
+    background:#808080; 
+}
+
+.maroon { 
+    background:#800000; 
+}
+
+.green { 
+    background:#008000; 
+}
+
+.white { 
+    background:#FFFFFF; 
+    color: black; 
+}
+
+.black { 
+    background:#000000; 
+}
+
+.red { 
+    background:#FF0000; 
+}
+
+.lime { 
+    background:#00FF00; 
+    color: black;
+}
+
+.navy { 
+    background:#000080; 
+}
+
+.purple { 
+    background:#800080;
+}
+
+.olive { 
+    background:#808000; 
+}
+
+.teal { 
+    background:#008080; 
+}
+
+.blue { 
+    background:#0000FF;
+    border: 5px;
+    border-style: dashed;
+    border-color: black;
+}
+
+.magenta { 
+    background:#FF00FF; 
+    color: black; 
+}
+.yellow { 
+    background: #FFFF00; 
+    color: black; 
+}
+.cyan { 
+    background: #00FFFF; 
+    color: black; 
+}
+
