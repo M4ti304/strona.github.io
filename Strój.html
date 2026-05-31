@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strój</title>
+
+    <style>
+        body{
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            background-color: #f4f6f9;
+            text-align: center;
+        }
+
+        header{
+            background-color: #003366;
+            color: white;
+            padding: 25px;
+        }
+
+        section{
+            padding: 30px;
+        }
+
+        .opis{
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 18px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .galeria{
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .postac{
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        .postac img{
+            width: 250px;
+            height: auto;
+        }
+
+        footer{
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        a{
+            color: #b0e6fc;
+        }
+
+        .postac{
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .postac:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+        }
+
+        .postac img{
+            width: 250px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .postac:hover img{
+            transform: scale(1.08);
+        }
+
+        h1 {
+            font-size: 250%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Strój Szkolny</h1>
+    <p><i>Elegancja, kultura i tradycja w szkole</i></p>
+</header>
+
+<section>
+    <div class="opis">
+        <h2>Witamy na stronie o stroju szkolnym</h2>
+
+        <p>
+            Strój szkolny jest ważnym elementem budowania wizerunku ucznia.
+            Odpowiedni ubiór podkreśla szacunek do szkoły, nauczycieli oraz innych uczniów.
+            Elegancki wygląd pomaga również przygotować się do przyszłego życia zawodowego.
+        </p>
+
+        <p>
+            W Śląskich Technicznych Zakładach Naukowych w Katowicach uczniowie
+            pielęgnują tradycję eleganckiego ubioru. Zgodnie ze statutem szkoły
+            uczniowie uczęszczają do szkoły w tradycyjnym stroju uczniowskim,
+            a dla chłopców obowiązkowy jest klasyczny granatowy garnitur.
+            Dzięki temu szkoła wyróżnia się swoim profesjonalnym charakterem
+            oraz wysoką kulturą osobistą uczniów.
+        </p>
+
+        <p>
+            Więcej informacji można znaleźć na stronie szkoły:
+            <a href="https://www.sltzn.katowice.pl/" target="_blank">
+                www.sltzn.katowice.pl
+            </a>
+        </p>
+    </div>
+
+    <h2>Przykładowe postacie</h2>
+
+    <div class="galeria">
+
+        <div class="postac">
+            <h3>Uczeń</h3>
+            <img src="Uczeń.png" alt="Uczeń">
+        </div>
+
+        <div class="postac">
+            <h3>Nauczyciel</h3>
+            <img src="Nauczyciel.png" alt="Nauczyciel">
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    Autor strony: <b>Mateusz Knopek</b>
+</footer>
+
+</body>
+</html>
